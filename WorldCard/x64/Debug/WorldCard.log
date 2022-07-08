@@ -1,0 +1,20 @@
+﻿  Source.cpp
+C:\Users\user\source\repos\WorldCard\Source.cpp(36,64): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\user\source\repos\WorldCard\Source.cpp(36,57): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+  WorldCard.vcxproj -> C:\Users\user\source\repos\WorldCard\x64\Debug\WorldCard.exe
