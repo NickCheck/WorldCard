@@ -1,12 +1,13 @@
 #include<GLFW/glfw3.h>
 #include<SFML/Graphics.hpp>
+#include<iostream>
 
 using namespace std;
 using namespace sf;
 
 int main()
 {
-    RenderWindow window(VideoMode(700, 500), "WorldCard");
+    RenderWindow window(VideoMode(1920, 1080), "WorldCard");
 
     Texture card;
     card.loadFromFile("card.png");
@@ -16,10 +17,12 @@ int main()
     bool isMove = false;
     float dx = 0, dy = 0;
 
+    a.setPosition(500, 500);
+
     while (window.isOpen())
     {
-
         Vector2i pos = Mouse::getPosition(window);
+
 
         Event b;
         while (window.pollEvent(b))
@@ -47,6 +50,11 @@ int main()
                 if (b.key.code == Mouse::Left)
                 {
                     isMove = false;
+                    cout << pos.x << '\n' << pos.y << '\n';
+                    if ((pos.x >= 100 && pos.x <= 900) && (pos.y >= 100 && pos.y <= 500))
+                    {
+                        a.setPosition(400, 280);
+                    }
                 }
             }
         }

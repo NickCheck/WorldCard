@@ -1,5 +1,5 @@
 ﻿  Source.cpp
-C:\Users\user\source\repos\WorldCard\Source.cpp(36,64): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\user\source\repos\WorldCard\Source.cpp(39,64): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
           with
           [
               T=int
@@ -8,7 +8,7 @@ C:\Users\user\source\repos\WorldCard\Source.cpp(36,64): warning C4244: аргу�
           [
               T=float
           ]
-C:\Users\user\source\repos\WorldCard\Source.cpp(36,57): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+C:\Users\user\source\repos\WorldCard\Source.cpp(39,57): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
           with
           [
               T=int
