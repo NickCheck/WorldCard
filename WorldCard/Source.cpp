@@ -12,12 +12,20 @@ int main()
     Texture card;
     card.loadFromFile("card.png");
 
+
     Sprite a(card);
+    a.setTexture(card);
+    a.setPosition(1400, 700);
+
+    Image map_image;
+    map_image.loadFromFile("1.png");
+    Texture map_texture;
+    map_texture.loadFromImage(map_image);
+    Sprite s_map;
+    s_map.setTexture(map_texture);
 
     bool isMove = false;
     float dx = 0, dy = 0;
-
-    a.setPosition(500, 500);
 
     while (window.isOpen())
     {
@@ -51,9 +59,9 @@ int main()
                 {
                     isMove = false;
                     cout << pos.x << '\n' << pos.y << '\n';
-                    if ((pos.x >= 100 && pos.x <= 900) && (pos.y >= 100 && pos.y <= 500))
+                    if ((pos.x >= 100 && pos.x <= 1500) && (pos.y >= 100 && pos.y <= 700))
                     {
-                        a.setPosition(400, 280);
+                        a.setPosition(800, 500);
                     }
                 }
             }
@@ -62,11 +70,11 @@ int main()
         if (isMove) a.setPosition(pos.x - dx, pos.y - dy);
 
         window.clear();
+        window.draw(s_map);
         window.draw(a);
         window.display();
 
     }
 
     return 0;
-    //HI
 }
